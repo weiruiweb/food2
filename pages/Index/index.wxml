@@ -1,0 +1,201 @@
+<!--index.wxml-->
+
+<view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+</view>
+
+<!--
+<view style="white-space: nowrap;" class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+    <view class="club" animation="{{animation1}}" bindtap="scrollLeft">
+      <image src="/images/banner1.jpg"/>
+
+    </view>
+    <view class="club" animation="{{animation2}}" >
+      <image src="/images/banner2.jpg"/>
+
+    </view>
+    <view class="club" animation="{{animation3}}" bindtap="scrollRight">
+      <image src="/images/banner3.jpg"/>
+    </view>
+   
+  </view>
+-->
+
+<view class="module">
+  <view class="module-item" bindtap="sign">
+     <view class="module_img">
+        <image src="/images/index_icon1.png"></image>
+     </view>
+     <view class="module_txt"  style="{{fonts[3].font}}">
+        推荐
+     </view>
+
+  </view>
+  <view class="module-item" bindtap="coldDishes">
+     <view class="module_img">
+        <image src="/images/index_icon2.png"></image>
+     </view>
+     <view class="module_txt"  style="{{fonts[3].font}}">
+        凉菜
+     </view>
+
+  </view>
+  <view class="module-item" bindtap="hotDishes">
+     <view class="module_img">
+        <image src="/images/index_icon3.png"></image>
+     </view>
+     <view class="module_txt"  style="{{fonts[3].font}}">
+        热菜
+     </view>
+
+  </view>
+  <view class="module-item" bindtap="queue">
+     <view class="module_img">
+        <image src="/images/index_icon4.png"></image>
+     </view>
+     <view class="module_txt"  style="{{fonts[3].font}}">
+        排队
+     </view>
+
+  </view>
+</view>
+<view class="w750 activty">
+  <view class="w710 flexRowBetween">
+    <view class="activty_left flexRowCenter" bindtap="group">
+      <view class="left_txt">
+        <view class="left_txt1" style="{{fonts[4].font}};color:#333;">团购活动</view>
+        <view class="left_txt2" style="{{fonts[3].font}};color:#666;">优惠多多</view>
+        <view class="left_txt3" style="{{fonts[2].font}};color:#f2665f;">抢到就是赚到</view>
+      </view> 
+      <view class="right_img">
+        <image src="/images/index1.png"/>
+      </view>
+    </view>
+    <view class="space1">
+    </view>
+    <view class="activty_right flexRowCenter" bindtap="discount">
+      <view class="left_txt">
+        <view class="left_txt1" style="{{fonts[4].font}};color:#333;">优惠券</view>
+        <view class="left_txt2" style="{{fonts[3].font}};color:#666;">限时抢购</view>
+        <view class="left_txt3" style="{{fonts[2].font}};color:#f2665f;">优惠多福利多</view>
+      </view> 
+      <view class="right_img">
+        <image src="/images/index2.png"/>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class="index_tlt">
+    <view class="tlt_img">
+      <image src="/images/index_tlt.png"></image>
+    </view>
+    <view class="tlt_txt"  style="{{fonts[4].font}};color:#fff;">
+      特色推荐
+    </view>
+</view>
+<view class="recommend w750">
+  <view class="w710 recommend_list ">
+    <view bindtap="dishes1">
+      <view class="recommend_img">
+        <image src="/images/index3.jpg"/>
+      </view>
+      <view class="dishes_info flexRowCenter">
+        <view class="dishes_left">
+          <view class="avoidOverflow" style="{{fonts[4].font}};color:#333;height:55%;">
+              蟹黄芝士面包
+          </view>
+          <view class="avoidOverflow " style="{{fonts[2].font}};color:#999;height:45%;">
+              马来西亚风味，口感十足
+          </view>
+        </view>
+        <view class="dishes_right" style="{{fonts[5].font}};">
+          新品鲜尝8.8折
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="w710 recommend_list ">
+     <view bindtap="dishes2">
+        <view class="recommend_img">
+          <image src="/images/index3.jpg"/>
+        </view>
+        <view class="dishes_info flexRowCenter">
+          <view class="dishes_left">
+            <view class="avoidOverflow" style="{{fonts[4].font}};color:#333;height:55%;">
+                蟹黄芝士面包
+            </view>
+            <view class="avoidOverflow " style="{{fonts[2].font}};color:#999;height:45%;">
+                马来西亚风味，口感十足
+            </view>
+          </view>
+          <view class="dishes_right" style="{{fonts[5].font}};">
+            新品鲜尝8.8折
+          </view>
+        </view>
+      </view>
+  </view>
+  <view class="w710 recommend_list ">
+    <view class="recommend_img">
+      <image src="/images/index3.jpg"/>
+    </view>
+    <view class="dishes_info flexRowCenter">
+      <view class="dishes_left">
+        <view class="avoidOverflow" style="{{fonts[4].font}};color:#333;height:55%;">
+            蟹黄芝士面包
+        </view>
+        <view class="avoidOverflow " style="{{fonts[2].font}};color:#999;height:45%;">
+            马来西亚风味，口感十足
+        </view>
+      </view>
+      <view class="dishes_right" style="{{fonts[5].font}};">
+        新品鲜尝8.8折
+      </view>
+    </view>
+  </view>
+</view>
+<view class="space_bottom" style="height:300rpx;">
+</view>
+<!--
+<view class="solely" style="{{fonts[1].font}};color:#666;">
+  技术支持:西安纯粹科技有限公司
+</view> -->
+<view class="navbar">
+    
+      <view class="navbar_item" bindtap="index">
+      
+          <view class="nav_img">
+            <image src="/images/navbar1-a.png" style="width:50rpx;height:48rpx;"></image>
+          </view>
+          <view class="text this-text" style="{{fonts[2].font}}">首页</view>
+
+      </view>
+    
+    <view class="navbar_item" bindtap="sort">
+   
+        <view class="nav_img">
+           <image src="/images/navbar2.png" style="width:50rpx;height:48rpx;"></image>
+        </view>
+        <view class="text" style="{{fonts[2].font}}">点菜</view>
+    
+    </view>
+  
+    <view class="navbar_item"  bindtap="User">
+   
+        <view class="nav_img">
+            <image src="/images/navbar3.png" style="width:50rpx;height:48rpx;"></image>
+        </view>
+        <view class="text" style="{{fonts[2].font}}">我的</view>
+
+    </view>
+</view>

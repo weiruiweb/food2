@@ -1,0 +1,154 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wx212611f012b9cf1d",
+	"projectname": "food2",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 18,
+			"list": [
+				{
+					"id": -1,
+					"name": "dishes",
+					"pathName": "pages/Dishes/dishes",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/Index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "pages/dishesList/dishesList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/User/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "user1",
+					"pathName": "pages/userPayment/userPayment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Usergroup",
+					"pathName": "pages/userGroup/userGroup",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "discoutUser",
+					"pathName": "pages/userDiscount/userDiscount",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "orderUser",
+					"pathName": "pages/userOrder/userOrder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "userComnt",
+					"pathName": "pages/userComment/userComment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "userDetail",
+					"pathName": "pages/userDeatil/userDeatil",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "group",
+					"pathName": "pages/group/group",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "queqe",
+					"pathName": "pages/queue/queue",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "discount",
+					"pathName": "pages/discount/discount",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dishes1",
+					"pathName": "pages/dishes1/dishes1",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "onfirmOder",
+					"pathName": "pages/dishesComfirm/dishesComfirm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "pages/dishesPayment/dishesPayment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "da",
+					"pathName": "pages/Index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "commment",
+					"pathName": "pages/userOrderComment/userOrderComment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "takeOrder",
+					"pathName": "pages/takeDeatil/takeDeatil"
+				}
+			]
+		}
+	}
+}
