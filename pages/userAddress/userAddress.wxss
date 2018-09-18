@@ -31,7 +31,7 @@ page{
 	justify-content:center;
 	}
 .address_set text{font-size:24rpx;}
-.address_set .default{color:#2c9fe1;width:71%;}
+.address_set .default{color:#f2665f;width:71%;}
 .address_set .default image{
 	margin-right:15px;
 	width:29rpx;

@@ -27,16 +27,17 @@ Page({
             return;
         }
         this._flyToCartEffect(events);
-        
+        console.log(events.scrollTop)
     },
 
     _flyToCartEffect:function(events){
         //获得当前点击的位置，距离可视区域左上角
         console.log(events);
         var touches=events.touches[0];
+       
         var diff={
-                x:-30-touches.clientY+'px',
-                y:25+this.data.windowHeight-touches.clientY-180+'px',
+                x:-touches.clientX*0.805+'px',
+                y:this.data.windowHeight-touches.clientY-125+'px',
 
             },
 
@@ -104,7 +105,7 @@ Page({
   },
   sort:function(){
      wx.redirectTo({
-      url:'/pages/Sort/sort'
+      url:'/pages/Dishes/dishes'
     })
   },
   index:function(){

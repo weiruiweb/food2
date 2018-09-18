@@ -8,7 +8,7 @@
 			
 		</view>
 		<view class="user_pro">
-			<image src="/images/pro3.png"></image>
+			<image src="/images/pro2.png"></image>
 		</view>
 	</view>
 	<view class="user_txt flexRowBetween">

@@ -16,24 +16,17 @@ Page({
       url:'/pages/userInfo/userInfo'
     })
   },
-  
-   bindDateChange: function(e) {
-    this.setData({
-      date: e.detail.value
-    })
-  },
+ 
   discount:function(e){
     var current=e.currentTarget.dataset.current;
     this.setData({
       tapCurrent:current
     })
   },
-  bindDateChange: function(e) {
+   bindRegionChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       region: e.detail.value
     })
-  },
-  switch2Change: function (e){
-
-  },
+  }
 })

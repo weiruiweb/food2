@@ -22,24 +22,24 @@
       付款方式
     </view>
     <view class="pay_method flexRowBetween">
-      <view class="chose_pay flexRowBetween">
+      <view class="chose_pay flexRowBetween" data-id="1" bindtap="choosePay">
           <view class="pay1 flexRowCenter">
               <image src="/images/pay2.jpg"></image>
-              <text class="text1">余额支付</text>
+              <text class="text1">微信支付</text>
           </view>
           <view class="choose_this">
-            <image src="/images/choose.png"></image>
+            <image src="{{isChoose ==1?'/images/choose.png':''}}"></image>
           </view>
       </view>
     </view>
     <view class="pay_method flexRowBetween">
-      <view class="chose_pay flexRowBetween">
+      <view class="chose_pay flexRowBetween"  data-id="2"  bindtap="choosePay">
           <view class="pay1 flexRowCenter">
               <image src="/images/pay1.png" style="width:80rpx;height:64rpx;"></image>
               <text class="text1">余额支付</text>
           </view>
           <view class="choose_this">
-           
+              <image src="{{isChoose ==2?'/images/choose.png':''}}"></image>
           </view>
       </view>
     </view>

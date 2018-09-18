@@ -103,7 +103,7 @@
       <view class="navbar_item" bindtap="index">
       
           <view class="nav_img">
-            <image src="/images/navbar1-a.png" style="width:42rpx;height:42rpx;"></image>
+            <image src="/images/navbar1-a.png" style="width:46rpx;height:50rpx;"></image>
           </view>
           <view class="text" style="{{fonts[2].font}}">首页</view>
 
@@ -112,7 +112,7 @@
     <view class="navbar_item" bindtap="sort">
    
         <view class="nav_img">
-           <image src="/images/navbar2.png" style="width:42rpx;height:42rpx;"></image>
+           <image src="/images/navbar2.png" style="width:46rpx;height:50rpx;"></image>
         </view>
         <view class="text" style="{{fonts[2].font}}">点菜</view>
     
@@ -121,7 +121,7 @@
     <view class="navbar_item"  bindtap="User">
    
         <view class="nav_img">
-            <image src="/images/navbar3.png" style="width:42rpx;height:42rpx;"></image>
+            <image src="/images/navbar3-a.png" style="width:46rpx;height:50rpx;"></image>
         </view>
         <view class="text this-text" style="{{fonts[2].font}}">我的</view>
 

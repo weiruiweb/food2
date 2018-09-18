@@ -35,8 +35,8 @@ Page({
         console.log(events);
         var touches=events.touches[0];
         var diff={
-                x:-30-touches.clientY+'px',
-                y:25+this.data.windowHeight-touches.clientY-180+'px',
+                x:-touches.clientX*0.805+'px',
+                y:this.data.windowHeight-touches.clientY-80+'px',
 
             },
 

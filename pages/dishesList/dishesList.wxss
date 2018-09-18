@@ -4,7 +4,7 @@ page{
 	background:#f2f2f2;
 }
 .menus_has{
-	height:60rpx;line-height:60rpx;font-size:30rpx;color:#666;padding:0 40rpx;
+	height:80rpx;line-height:80rpx;font-size:30rpx;color:#666;padding:0 40rpx;
 }
 .dishes_list{
 	padding:0rpx 40rpx;
@@ -39,7 +39,6 @@ page{
 	line-height:46rpx;
 	text-align:center;
 	font-size:40rpx;
-	font-weight:bold;
 	color:#666;
 	border:solid 1px #666;
 }

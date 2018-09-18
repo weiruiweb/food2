@@ -89,7 +89,7 @@
 	    		168元
 	    	</view>
 	    	<view class="add"  data-num="2"  bindtap="onAddingToCartTap">+</view>
-	    	<view class="circle {{flayTo==2?'animate':''}}" mode="aspectFill" style="{{flayTo==1?translateStyle:''}}"></view>
+	    	<view class="circle {{flayTo==2?'animate':''}}" mode="aspectFill" style="{{flayTo==2?translateStyle:''}}"></view>
 	    </view>
 	</view>
 </view>
@@ -123,12 +123,12 @@
 	    		168元
 	    	</view>
 	    	<view class="add"  data-num="3"  bindtap="onAddingToCartTap">+</view>
-	    	<view class="circle {{flayTo==3?'animate':''}}" mode="aspectFill" style="{{flayTo==1?translateStyle:''}}"></view>
+	    	<view class="circle {{flayTo==3?'animate':''}}" mode="aspectFill" style="{{flayTo==3?translateStyle:''}}"></view>
 	    </view>
 
 	</view>
 </view>
-<view class="space_bottom" style="margin-bottom:120rpx;">
+<view class="space_bottom" style="margin-bottom:320rpx;">
 </view>
 <view id="menus">
 	<view class="has_menus flexRowCenter">
@@ -158,7 +158,7 @@
     		外卖
     </view>
     <view class="waimai">
-    		<image src="/images/motorcycle.png"></image>
+    		<image src="/images/motorcycle.png" style="width:55rpx;height:41rpx;"></image>
     </view>
     <view style="{{fonts[5].font}};color:#666;height:80rpx;line-height:80rpx;">
     		堂食
@@ -166,14 +166,14 @@
     <view class="dining flexRowCenter" style="{{fonts[5].font}}">
 		<view class="dining_left ">
 			<view class="flexRowBetween" style="width:70%;margin:0 auto;color:#fff;">
-				<image src="/images/menu_icon1.png" style="width:46rpx;height:42rpx;"></image>
+				<image src="/images/menu_icon1.png" style="width:49rpx;height:50rpx;"></image>
 				<text >输入桌号</text>
 			</view>
 		</view>
 		<view class="scer"></view>
 		<view class="dining_right ">
 			<view class="flexRowBetween" style="width:62%;margin:0 auto;color:#fff;">
-			<image src="/images/menu_icon2.png" style="width:50rpx;height:49rpx;"></image>
+			<image src="/images/menu_icon2.png" style="width:49rpx;height:50rpx;"></image>
 			<text>扫码</text>
 			</view>
 		</view>
@@ -185,25 +185,25 @@
       <view class="navbar_item" bindtap="index">
       
           <view class="nav_img">
-            <image src="/images/navbar1-a.png" style="width:50rpx;height:48rpx;"></image>
+            <image src="/images/navbar1.png" style="width:46rpx;height:50rpx;"></image>
           </view>
-          <view class="text this-text" style="{{fonts[2].font}}">首页</view>
+          <view class="text" style="{{fonts[2].font}}">首页</view>
 
       </view>
     
     <view class="navbar_item" bindtap="sort">
    
         <view class="nav_img">
-           <image src="/images/navbar2.png" style="width:50rpx;height:48rpx;"></image>
+           <image src="/images/navbar2-a.png" style="width:46rpx;height:50rpx;"></image>
         </view>
-        <view class="text" style="{{fonts[2].font}}">点菜</view>
+        <view class="text this-text" style="{{fonts[2].font}}">点菜</view>
     
     </view>
   
     <view class="navbar_item"  bindtap="User">
    
         <view class="nav_img">
-            <image src="/images/navbar3.png" style="width:50rpx;height:48rpx;"></image>
+            <image src="/images/navbar3.png" style="width:46rpx;height:50rpx;"></image>
         </view>
         <view class="text" style="{{fonts[2].font}}">我的</view>
 

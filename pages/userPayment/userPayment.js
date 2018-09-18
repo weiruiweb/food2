@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-  
+    isChoose:1,
   },
   
   onLoad: function () {
@@ -29,6 +29,11 @@ Page({
   discount:function(){
     wx.navigateTo({
       url:'/pages/discount/discount'
+    })
+  },
+  choosePay:function(e){
+    this.setData({
+      isChoose:e.currentTarget.dataset.id
     })
   }
 })

@@ -7,24 +7,24 @@
 	支付方式
 </view>
 <view class="w750">
-	<view class="pay_method flexRowBetween">
+	<view class="pay_method flexRowBetween"  data-id="1" bindtap="choosePay">
 		<view class="pay_left flexRowBetween">
 			<view class="pay_icon"><image src="/images/pay2.jpg"></image></view>
 			<text>微信支付</text>
 		</view>
 		<view class="pay_right">
-			<image src="/images/choose.png"></image>
+			<image src="{{isChoose ==1?'/images/choose.png':''}}"></image>
 		</view>
 	</view>
 </view>
 <view class="w750">
-	<view class="pay_method flexRowBetween">
+	<view class="pay_method flexRowBetween"  data-id="2" bindtap="choosePay">
 		<view class="pay_left flexRowBetween">
 			<view class="pay_icon"><image src="/images/pay1.png"></image></view>
 			<text>微信支付</text>
 		</view>
 		<view class="pay_right">
-			
+			<image src="{{isChoose ==2?'/images/choose.png':''}}"></image>
 		</view>
 	</view>
 </view>

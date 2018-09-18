@@ -69,7 +69,7 @@
 	</view>
 	
 </view>
-<view class="total_money padding30 flexRowBetween">
+<view class="total_money padding30 flexRowBetween" style="padding-right:120rpx;">
 		<view class="total_money1">套餐价：288</view>
 		<view class="total_money2">总价：334</view>
 </view>

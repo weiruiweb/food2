@@ -1,35 +1,14 @@
 <!--index.wxml-->
 
-<view class="page-body">
-    <view class="page-section page-section-spacing swiper">
-      <swiper
-        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
-        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
-        <block wx:for="{{background}}" wx:key="*this">
-          <swiper-item>
-            <image src="{{item}}"></image>
-          </swiper-item>
-        </block>
-      </swiper>
-    </view>
-</view>
+<swiper  class="swiper-block"  previous-margin="90rpx" next-margin="90rpx" current="0"  autoplay="{{autoplay}}"
+        interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange" circular="{{circular}}">
 
-<!--
-<view style="white-space: nowrap;" class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
-    <view class="club" animation="{{animation1}}" bindtap="scrollLeft">
-      <image src="/images/banner1.jpg"/>
-
-    </view>
-    <view class="club" animation="{{animation2}}" >
-      <image src="/images/banner2.jpg"/>
-
-    </view>
-    <view class="club" animation="{{animation3}}" bindtap="scrollRight">
-      <image src="/images/banner3.jpg"/>
-    </view>
-   
-  </view>
--->
+    <block wx:for="{{background}}" wx:index="{{index}}">
+        <swiper-item class="swiper-item">
+            <image mode="aspectFill" src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : ''}}"/>
+        </swiper-item>
+    </block>
+</swiper>
 
 <view class="module">
   <view class="module-item" bindtap="sign">
@@ -175,7 +154,7 @@
       <view class="navbar_item" bindtap="index">
       
           <view class="nav_img">
-            <image src="/images/navbar1-a.png" style="width:50rpx;height:48rpx;"></image>
+            <image src="/images/navbar1-a.png" style="width:46rpx;height:50rpx;"></image>
           </view>
           <view class="text this-text" style="{{fonts[2].font}}">首页</view>
 
@@ -184,7 +163,7 @@
     <view class="navbar_item" bindtap="sort">
    
         <view class="nav_img">
-           <image src="/images/navbar2.png" style="width:50rpx;height:48rpx;"></image>
+           <image src="/images/navbar2.png" style="width:46rpx;height:50rpx;"></image>
         </view>
         <view class="text" style="{{fonts[2].font}}">点菜</view>
     
@@ -193,7 +172,7 @@
     <view class="navbar_item"  bindtap="User">
    
         <view class="nav_img">
-            <image src="/images/navbar3.png" style="width:50rpx;height:48rpx;"></image>
+            <image src="/images/navbar3.png" style="width:46rpx;height:50rpx;"></image>
         </view>
         <view class="text" style="{{fonts[2].font}}">我的</view>
 

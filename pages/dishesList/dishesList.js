@@ -12,44 +12,15 @@ Page({
       fonts:app.globalData.font
     })
   },
-  userInfo:function(){
+  backDishes:function(){
     wx.navigateTo({
-      url:'/pages/userInfo/userInfo'
+      url:'/pages/Dishes/dishes'
     })
   },
-  discount:function(){
+  confirmDishes:function(){
     wx.navigateTo({
-      url:'/pages/discount/discount'
+      url:'/pages/dishesComfirm/dishesComfirm'
     })
   },
-  address:function(){
-    wx.navigateTo({
-      url:'/pages/manageAddress/manageAddress'
-    })
-  },
-  order:function(){
-    wx.navigateTo({
-      url:'/pages/userOrder/userOrder'
-    })
-  },
- shopping:function(){
-     wx.redirectTo({
-      url:'/pages/Shopping/shopping'
-    })
-  },
-  sort:function(){
-     wx.redirectTo({
-      url:'/pages/Sort/sort'
-    })
-  },
-  index:function(){
-     wx.redirectTo({
-      url:'/pages/Index/index'
-    })
-  },
-  User:function(){
-     wx.redirectTo({
-      url:'/pages/User/user'
-    })
-  }
+  
 })

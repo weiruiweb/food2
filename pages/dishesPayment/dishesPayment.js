@@ -5,7 +5,7 @@ const app = getApp()
 
 Page({
   data: {
-    
+    isChoose:1
   },
   onLoad: function () {
     this.setData({
@@ -50,6 +50,11 @@ Page({
   User:function(){
      wx.redirectTo({
       url:'/pages/User/user'
+    })
+  },
+   choosePay:function(e){
+    this.setData({
+      isChoose:e.currentTarget.dataset.id
     })
   }
 })

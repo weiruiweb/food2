@@ -166,8 +166,8 @@ page{
 }
 .cart_number{
 	position:absolute;
-	right:20rpx;
-	top:3rpx;
+	right:0rpx;
+	top:0rpx;
 	height:0rpx;
 	z-index:;
 }
@@ -228,6 +228,7 @@ page{
 	bottom:100rpx;
 	background:#fff;
 	border-bottom:solid 1px #e0e0e0;
+	padding-right:60rpx;
 }
 .total_money1{
 	color:#f2665f;

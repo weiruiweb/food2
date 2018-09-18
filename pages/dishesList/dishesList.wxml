@@ -16,11 +16,11 @@
 				<view class="dishes_right">
 					<view class="dishes_number flexRowCenter">
 						<view class="add_s">
-							<view class="min_dishes">+</view>
+							<view class="min_dishes" style="font-size:70rpx;line-height:34rpx;">-</view>
 						</view>
 						<view class="add_centerN" >1</view>
 						<view class="add_s">
-							<view class="min_dishes add_dishes ">-</view>
+							<view class="min_dishes add_dishes ">+</view>
 						</view>
 					</view>
 					<view id="menus_up">
@@ -44,11 +44,11 @@
 				<view class="dishes_right">
 					<view class="dishes_number flexRowCenter">
 						<view class="add_s">
-							<view class="min_dishes">+</view>
+							<view class="min_dishes" style="font-size:70rpx;line-height:34rpx;">-</view>
 						</view>
 						<view class="add_centerN" >1</view>
 						<view class="add_s">
-							<view class="min_dishes add_dishes ">-</view>
+							<view class="min_dishes add_dishes ">+</view>
 						</view>
 					</view>
 					<view id="menus_up">
@@ -75,11 +75,11 @@
 				<view class="dishes_right">
 					<view class="dishes_number flexRowCenter">
 						<view class="add_s">
-							<view class="min_dishes">+</view>
+							<view class="min_dishes" style="font-size:70rpx;line-height:34rpx;">-</view>
 						</view>
 						<view class="add_centerN" >1</view>
 						<view class="add_s">
-							<view class="min_dishes add_dishes ">-</view>
+							<view class="min_dishes add_dishes ">+</view>
 						</view>
 					</view>
 					<view id="menus_up">
@@ -103,11 +103,11 @@
 				<view class="dishes_right">
 					<view class="dishes_number flexRowCenter">
 						<view class="add_s">
-							<view class="min_dishes">+</view>
+							<view class="min_dishes" style="font-size:70rpx;line-height:34rpx;">-</view>
 						</view>
 						<view class="add_centerN" >1</view>
 						<view class="add_s">
-							<view class="min_dishes add_dishes ">-</view>
+							<view class="min_dishes add_dishes ">+</view>
 						</view>
 					</view>
 					<view id="menus_up">
@@ -121,13 +121,13 @@
 </view>
 <view class="menu_totl ">
 	<view class="menu_in flexRowCenter">
-		<view class="menu_inL">
+		<view class="menu_inL" bindtap="backDishes">
 			加菜
 		</view>
 		<view class="menu_inC">
 			4份共<text>392元</text>
 		</view>
-		<view class="menu_inL menu_inR">
+		<view class="menu_inL menu_inR" bindtap="confirmDishes">
 			全部下单
 		</view>
 	</view>

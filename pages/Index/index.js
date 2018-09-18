@@ -8,7 +8,7 @@ Page({
     indicatorDots: true,
     vertical: false,
     autoplay: true,
-    circular: false,
+    circular: true,
     interval: 2000,
     duration: 500,
     previousMargin: 0,
@@ -30,6 +30,12 @@ Page({
           });
          
         }, 2000);
+  },
+  swiperChange(e) {
+    const that = this;
+    that.setData({
+      swiperIndex: e.detail.current,
+    })
   },
   group:function(){
      wx.navigateTo({
