@@ -1,4 +1,7 @@
 //app.js
+import { Token } from 'utils/token.js';
+import { Api } from 'utils/api.js';
+var api = new Api();
 App({
   onLaunch: function () {
     // 展示本地存储能力
